@@ -47,6 +47,7 @@ section {
 h1 {
   font-size: 3.5rem;
   font-family: 'Roboto-Bold';
+  line-height: 1;
   padding: 10px 0;
 }
 
@@ -85,19 +86,42 @@ input {
   border-radius: 10px;
 }
 
+input:focus {
+  outline: none;
+  border: 1px solid #535159;
+}
+
 button {
   display: block;
   width: 100%;
-  background-color: #232742;
+  background: #232742;
   color: #fff;
   font-size: inherit;
   font-family: 'Roboto-Bold';
   text-align: center;
   margin: 25px 0;
   padding: 18px;
-  border: 1px solid #232742;
+  border: 0px solid #232742;
   border-radius: 10px;
 }
 
+button:focus, button:hover {
+  outline: none;
+  background: linear-gradient(to right,#ff5379, #ff693e);
+}
+
+#icon {
+  width: 65px;
+  margin-bottom: 30px;
+}
+
+#success {
+  width: 500px;
+  padding: 0 25px;
+}
+
+#success h1 {
+  margin: 15px;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
